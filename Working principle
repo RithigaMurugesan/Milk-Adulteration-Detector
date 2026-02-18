@@ -1,0 +1,44 @@
+WORKING PRINCIPLE
+
+The proposed milk adulteration detection system works by combining optical analysis and electrical conductivity measurement with machine learning and IoT communication. Milk adulteration alters both the light absorption characteristics and the ionic concentration of milk. By measuring these two properties together, the system can accurately detect the presence of adulterants.
+
+--> Step-by-Step Working
+
+1. MILK SAMPLE INPUT:
+
+A small quantity of milk is placed in a transparent container (cuvette) inside the device.
+
+2. MULTISPECTRAL ANALYSIS (AS7262 SENSOR)
+
+A white LED illuminates the milk sample.
+The AS7262 multispectral sensor measures the reflected/transmitted light at six wavelengths (450 nm, 500 nm, 550 nm, 570 nm, 600 nm, and 650 nm).
+These wavelengths capture the changes in color and turbidity caused by adulterants such as water, starch, detergent, and synthetic milk.
+
+3. ELECTRICAL CONDUCTIVITY MEASUREMENT (EC SENSOR)
+The EC sensor measures the conductivity of milk, which depends on the concentration of dissolved ions.
+Adulterants like salt, urea, and detergent increase the ionic content, resulting in higher conductivity.
+
+4. DATA ACQUISTION BY ESP32
+The ESP32 microcontroller collects:
+
+- Spectral data from AS7262
+- Conductivity values from EC sensor
+- The data is filtered and normalized for processing.
+
+5. MACHINE LEARNING BASED CLASSIFICATION
+
+A Logistic Regression model, trained using known milk samples, runs on the ESP32.
+This model analyzes the combined spectral and EC data and predicts whether the milk is:
+
+        Pure or Adulterated
+It also calculates a probability value indicating confidence.
+
+6. WIRELESS DATA TRANSMISSION
+
+The ESP32 sends the test result and sensor values to a mobile device using Bluetooth or Wi-Fi.
+
+7. MOBILE APPLICATION DISPLAY
+
+The mobile application displays:
+Milk quality (Pure / Adulterated)
+
