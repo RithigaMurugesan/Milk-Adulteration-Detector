@@ -8,8 +8,7 @@ PROJECT OVERVIEW
 This project proposes a portable, low-cost, IoT-based milk adulteration detection system using:
 
 - AS7262 Multispectral Sensor
-- EC (Electrical Conductivity) Sensor
-- pH Sensor
+- EC (Electrical Conductivity) sensor
 - ESP32 microcontroller
 - Mobile App (Bluetooth / Wi-Fi)
 
@@ -28,4 +27,4 @@ To detect multiple adulterants such as:
 - Salt
 - Synthetic milk
 
-To use multispectral sensing + electrical conductivity for higher reliability. To apply machine learning (Logistic Regression) for intelligent classification. To display results on a mobile application instantly
+To use multispectral sensing + electrical conductivity for higher reliability. To apply machine learning (Logistic Regression) for intelligent classification. To display results on a mobile application instantly.
