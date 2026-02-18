@@ -1,0 +1,40 @@
+Milk Sample
+     ↓
+AS7262 Multispectral Sensor + EC Sensor
+     ↓
+ESP32 Microcontroller
+     ↓
+Logistic Regression Model 
+     ↓
+Bluetooth / Wi-Fi Communication
+     ↓
+Mobile Application
+     ↓
+User Result (Pure / Adulterated)
+
+INPUT & OUTPUT
+
+---> Input:
+
+   Milk sample (20 ml)
+
+---> Output:
+
+   Classification: Pure / Adulterated
+
+ FEASIBILITY & VIABILITY
+
+- Portable, battery-powered system
+- Low-cost sensors compared to lab spectrometers
+- Works without cloud (Edge ML)
+- Fast and real-time
+- Suitable for dairy farms, collection centers, and rural areas
+
+IMPACTS AND BENEFITS
+
+- Protects public health
+- Helps farmers and cooperatives detect adulteration
+- Prevents bulk milk contamination
+- Saves money and time
+- Encourages digital dairy quality monitoring
+- Reduces dependency on costly laboratories
